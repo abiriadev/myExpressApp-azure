@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1 Adder
+    form(
+        method="GET"
+        action="/add"
+    )
+        label A
+            input(type="text" name="a")
+        label B
+            input(type="text" name="b")
+        br
+        input(
+            type="submit"
+            value="add"
+        )
